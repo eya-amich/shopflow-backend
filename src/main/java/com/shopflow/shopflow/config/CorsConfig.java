@@ -17,13 +17,10 @@ public class CorsConfig {
 
         // Origines autorisées (frontend)
         config.setAllowedOriginPatterns(List.of(
-                "http://localhost:*",
+                "http://localhost:4200",
                 "https://shopflow-3a2d7.web.app",
-                "https://shopflow-3a2d7.firebaseapp.com",
-                "https://*.web.app",
-                "https://*.firebaseapp.com"
+                "https://shopflow-3a2d7.firebaseapp.com"
         ));
-
         // Méthodes HTTP autorisées
         config.setAllowedMethods(Arrays.asList(
                 "GET", "POST", "PUT", "DELETE", "PATCH", "OPTIONS"
